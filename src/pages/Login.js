@@ -16,7 +16,7 @@ const Login = () => {
     try {
       setLoading(true);
       //const { data } = await axios.post("/users/login", values);                     //destructuring the data
-      const { data } = await axios.post("https://cashcraftpro-mern.onrender.com/users/login", values);                     //destructuring the data
+      const { data } = await axios.post("/users/login", values);                     //destructuring the data
       setLoading(false);
       message.success("login success"); 
       localStorage.setItem(                                                          //when login is successfull

@@ -93,7 +93,7 @@ const HomePage = () => {
   const handleDelete = async (record) => {
     try {
       setLoading(true);
-      await axios.post("transactions/delete-transaction", {
+      await axios.post("/transactions/delete-transaction", {
         transactionId: record._id,
       });
       setLoading(false);
